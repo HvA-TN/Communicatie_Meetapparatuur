@@ -41,16 +41,17 @@ Een passief RC-filter bestaat uit een weerstand en condensator.
 
 Voor een laagdoorlaatfilter geldt:
 
-\[
+$$
 H(\omega) = \frac{1}{1 + i\omega RC}, \qquad f_c = \frac{1}{2\pi RC}
-\]
+$$
 
 De amplitude en fase voor een Bode-plot zijn:
 
-\[
-|H(\omega)|_\mathrm{dB} = 20\log_{10}|H(\omega)|,\qquad 
+$$
+|H(\omega)|_\mathrm{dB} = 20\log_{10}|H(\omega)|, \qquad
 \phi(\omega) = -\arctan(\omega RC)
-\]
+$$
+
 
 ---
 
@@ -58,22 +59,24 @@ De amplitude en fase voor een Bode-plot zijn:
 
 Tijdens dit practicum gebruik je een overzichtelijke softwareboom:
 
+```
 Communicatie/
 ├── instruments/
-│ ├── init.py
-│ ├── hardware.py
-│ ├── rigol_dg1022.py
-│ └── rigol_dm3058e.py
+│   ├── __init__.py
+│   ├── hardware.py
+│   ├── rigol_dg1022.py
+│   └── rigol_dm3058e.py
 ├── utils/
-│ ├── init.py
-│ ├── functions.py
-│ └── constants.py
+│   ├── __init__.py
+│   ├── functions.py
+│   └── constants.py
 ├── data/
-│ ├── raw/
-│ └── plots/
+│   ├── raw/
+│   └── plots/
 ├── rc_filter.ipynb
 ├── README.md
 └── .gitignore
+```
 
 - `instruments/` bevat de drivers (SCPI-aansturing).
 - `utils/` bevat hulpfuncties (laden/opslaan van data, I/O).
