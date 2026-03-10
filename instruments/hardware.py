@@ -18,7 +18,8 @@ def open_instruments(message = 0):
     if message == 1:
         print("Apparaat gevonden:", fg.query("*IDN?").strip())
         print("Apparaat gevonden:", dmm.query("*IDN?").strip())
-
+        print("Controleer goed of de functiegenerator (fg) en de digitale multimeter (dmm) \n " \
+        "goed óm zijn aangesloten.")
     return rm, fg,dmm
 
 def close_instruments(*instruments, message=0):

@@ -3,8 +3,7 @@ def set_fixed_sine(gen, freq=1000, vrms=0.5, channel=1):
     """
     Stel de functiegenerator in op een vaste sinusgolf.
 
-    Dit is een didactisch voorbeeld:
-    studenten zien stap-voor-stap hoe je via SCPI-commando’s
+    Studenten zien stap-voor-stap hoe je via SCPI-commando’s
     de golfvorm, amplitude en frequentie instelt.
 
     Parameters
